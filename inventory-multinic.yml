@@ -13,19 +13,19 @@ all:
           dhcp: false
           ipv4: 192.168.85.20
           nic2_ipv4: 192.168.20.20
-          nic4_ipv4: 192.168.60.20
+          nic3_ipv4: 192.168.60.20
 
         master2.ocp4.randalllabs.com:
           dhcp: false
           ipv4: 192.168.85.21
           nic2_ipv4: 192.168.20.21
-          nic4_ipv4: 192.168.60.21
+          nic3_ipv4: 192.168.60.21
 
         master3.ocp4.randalllabs.com:
           dhcp: false
           ipv4: 192.168.85.22
           nic2_ipv4: 192.168.20.22
-          nic4_ipv4: 192.168.60.22
+          nic3_ipv4: 192.168.60.22
         
     workers:
       hosts:
@@ -33,17 +33,17 @@ all:
           dhcp: false
           ipv4: 192.168.85.30
           nic2_ipv4: 192.168.20.30
-          nic4_ipv4: 192.168.60.30
+          nic3_ipv4: 192.168.60.30
 
         worker2.ocp4.randalllabs.com:
           dhcp: false
           ipv4: 192.168.85.31
           nic2_ipv4: 192.168.20.31
-          nic4_ipv4: 192.168.60.31
+          nic3_ipv4: 192.168.60.31
 
         worker3.ocp4.randalllabs.com:
           dhcp: false
           ipv4: 192.168.85.32
           nic2_ipv4: 192.168.20.32
-          nic4_ipv4: 192.168.60.32
+          nic3_ipv4: 192.168.60.32
 ...
