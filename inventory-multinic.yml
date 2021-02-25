@@ -30,7 +30,7 @@ all:
     workers:
       hosts:
         worker1.ocp4.randalllabs.com:
-          dhcp: true
+          dhcp: false
           ipv4: 192.168.85.30
           nic2_ipv4: 192.168.20.30
           nic4_ipv4: 192.168.60.30
