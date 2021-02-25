@@ -3,39 +3,47 @@ all:
   children:
     bootstrap:
       hosts:
-        bootstrap_node.example.com:
-          dhcp: true
-          ipv4: 192.168.122.15
+        bootstrap.ocp4.randalllabs.com:
+          dhcp: false
+          ipv4: 192.168.85.15
     
     masters:
       hosts:
-        master1.example.com:
-          dhcp: true
-          ipv4: 192.168.122.20
-          nic2_ipv4: 192.168.132.20
-
-        master2.example.com:
+        master1.ocp4.randalllabs.com:
           dhcp: false
-          ipv4: 192.168.122.21
-          nic2_ipv4: 192.168.132.21
+          ipv4: 192.168.85.20
+          nic2_ipv4: 192.168.20.20
+          nic4_ipv4: 192.168.60.20
 
-        master3.example.com:
-          ipv4: 192.168.122.22
-          nic2_ipv4: 192.168.132.22
+        master2.ocp4.randalllabs.com:
+          dhcp: false
+          ipv4: 192.168.85.21
+          nic2_ipv4: 192.168.20.21
+          nic4_ipv4: 192.168.60.21
+
+        master3.ocp4.randalllabs.com:
+          dhcp: false
+          ipv4: 192.168.85.22
+          nic2_ipv4: 192.168.20.22
+          nic4_ipv4: 192.168.60.22
         
     workers:
       hosts:
-        worker1.example.com:
+        worker1.ocp4.randalllabs.com:
           dhcp: true
-          ipv4: 192.168.122.30
-          nic2_ipv4: 192.168.132.30
+          ipv4: 192.168.85.30
+          nic2_ipv4: 192.168.20.30
+          nic4_ipv4: 192.168.60.30
 
-        worker2.example.com:
+        worker2.ocp4.randalllabs.com:
           dhcp: false
-          ipv4: 192.168.122.31
-          nic2_ipv4: 192.168.132.31
+          ipv4: 192.168.85.31
+          nic2_ipv4: 192.168.20.31
+          nic4_ipv4: 192.168.60.31
 
-        worker3.example.com:
-          ipv4: 192.168.122.32
-          nic2_ipv4: 192.168.132.32
+        worker3.ocp4.randalllabs.com:
+          dhcp: false
+          ipv4: 192.168.85.32
+          nic2_ipv4: 192.168.20.32
+          nic4_ipv4: 192.168.60.32
 ...
